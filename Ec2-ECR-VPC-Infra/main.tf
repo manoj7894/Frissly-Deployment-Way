@@ -38,7 +38,7 @@ module "ec2" {
 module "ecr" {
   source = "./module/ecr"
 
-  repository_name   = "frissly-docker-repo"
+  repository_name = "frissly-docker-repo"
   vpc_id            = module.vpc.vpc_id
   public_subnet_01  = module.vpc.public_subnet_id
   public_subnet_02  = module.vpc.public_subnet1_id
